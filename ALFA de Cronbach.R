@@ -23,15 +23,15 @@ which(is.na(BD_Likert_csv_1_))
 BD_Likert2<-na.omit(BD_Likert_csv_1_)
 
 
-#Construcción de los constructos
+#Construccion de los constructos
 
 attach(BD_Likert2)
 
 constructo1<-data.frame(A1,A2,A3,A4,A5,A6,A7,A8)
 constructo2<-data.frame(B1,B2,B3,B4)
 constructo3<-data.frame(C1,C2,C3,C4,C5,C6)
-names(
-constructo2 <-select(BD_Likert2,18)
+names(BD_Likert2)
+constructo2 <-select(BD_Likert2,18,28,29,45)
 library(psych)
 #Calculamos el alfa de Cronbach para cada
 #uno de los constructos
@@ -48,8 +48,8 @@ constructo5<-data.frame(E1,E2,E3,E4,E5,E6,E7,E8,E9,E10,E11)
 constructo6<-data.frame(F1,F2,F3,F4,F5,F6,F7,F8)
 constructo7<-data.frame(G1,G2,G3,G4,G5,G6,G7,G8)
 constructo8<-data.frame(H1,H2,H3,H4)
-constructo4<-select(BD_Likert2,23,31,35,38,41,47,48,53,55,56
-constructo6<-select(BD_Likert2,12,14,19,20,34,
+constructo4<-select(BD_Likert2,23,31,35,38,41,47,48,53,55,56)
+constructo6<-select(BD_Likert2,12,14,19,20,34)
 constructo8<-select(BD_Likert2,4,8,9,18)
 #2.- Calcula el coeficiente alfa de cronbach para
 #los constructos D, E, F, G Y H
